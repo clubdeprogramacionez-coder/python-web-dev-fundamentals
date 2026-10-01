@@ -1,22 +1,34 @@
-# workshop: Diseno y Desarrollo Web con Python
+# python-web-dev-fundamentals
 
-Taller de introducción a Python y desarrollo de APIs web desde cero, impartido por: Club de Programación de ESIME Zacatenco (IPN).
+Este repositorio contiene un curso práctico de desarrollo backend con Python y FastAPI, organizado por temas.
 
-## Objetivo del Taller
+## Temas
 
-Aprenderás la sintaxis fundamental de Python, su modelo de programación orientada a objetos y funcional, manejo asincrónico y cómo construir APIs REST escalables desde cero utilizando el framework FastAPI y las mejores prácticas de desarrollo backend.
+- [Tema 01 - Fundamentos de FastAPI](./tema-01-fundamentos-fastapi/README.md)
+- [Tema 02 - Manejo de Base de Datos (SQLAlchemy, SQL)](./tema-02-base-datos/README.md)
+- [Tema 03 - Autenticación y Autorización (JWT, OAuth)](./tema-03-autenticacion-autorizacion/README.md)
+- [Tema 06 - Testing y Debugging](./tema-06-testing-debugging/README.md)
 
-## Módulos del Curso
+## Objetivo general
 
-El taller cubre desde los conceptos básicos de Python hasta la construcción de aplicaciones web producción-ready, incluyendo autenticación, validación de datos, manejo de bases de datos y deployment.
+El curso busca enseñar cómo construir APIs web robustas y escalables con Python, siguiendo buenas prácticas de organización, seguridad y pruebas.
 
-## Requisitos Previos
+## Estructura base que se repite por tema
 
-Tener instalado Python 3.8+ y pip en tu sistema antes de iniciar la práctica. Sigue los siguientes pasos para verificar tu instalación:
+Cada tema conserva la misma plantilla:
 
-```bash
-# Verificar la instalación de Python
-python --version
+```text
+tema-XX-nombre/
+├── app.py
+├── requisitos.txt
+├── core/
+│   └── conexion_bd.py
+├── controladores/
+│   ├── usuarios_api.py
+│   └── productos_api.py
+└── modelos/
+    ├── usuario.py
+    └── producto.py
+```
 
-# Instalar las dependencias del proyecto
-pip install -r requirements.txt
+La idea es que cada bloque temático tenga su propio README con contenido teórico y la estructura mínima del proyecto para empezar a practicar.
